@@ -8,7 +8,8 @@ module.exports = {
         }
         const relativeFileName = absoluteFileName
           .replace(process.cwd(), '')
-          .replace(/^\/(?:lib|src|test)\//, '');
+          .replace(/\//g, '/')
+          .replace(/^(?:\/(?:lib|src|test))?\//, '');
         const testName = String(relativeFileName.replace(/\.spec\.ts$/, ''));
         return {
           CallExpression(node) {
