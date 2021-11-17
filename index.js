@@ -1,6 +1,9 @@
 module.exports = {
   rules: {
     'jest-root-describe': {
+      meta: {
+        fixable: "code"
+      },
       create(context) {
         const absoluteFileName = context.getFilename();
         if (!absoluteFileName.endsWith('.spec.ts')) {
