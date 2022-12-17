@@ -1,5 +1,5 @@
 {
-  "name": "@renovate/eslint-plugin",
+  "name": "@renovatebot/eslint-plugin",
   "version": "0.0.4",
   "main": "index.js"
 }
